@@ -4,12 +4,24 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-    --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
-    --font-montserrat: var(--font-montserrat);
+    --color-brand-orange: #ea580c;
+
+    /* DO NOT CARE ABOUT THE WARNING */
+    --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+    --font-heading: var(--font-sora), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), serif;
+    letter-spacing: -0.02em; /* Sora looks great slightly tighter */
 }
 
 body {
-    @apply font-montserrat;
+    font-family: var(--font-sans), serif;
+}
+
+.container {
+    @apply w-full max-w-7xl mx-auto px-4 lg:px-8;
 }
 
 @theme inline {
@@ -123,10 +135,11 @@ body {
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+
+    body {
+        @apply bg-background text-foreground;
     }
 }

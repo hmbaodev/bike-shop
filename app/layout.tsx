@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import { ReactNode } from "react";
+import { Sora, Jost } from "next/font/google";
 
 import "./globals.css";
-
-const montserrat = Montserrat({
-    variable: "--font-montserrat",
-    subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
     title: "Bike Shop | Home",
     description: "Built by Hua Minh Bao",
 };
+
+const sora = Sora({
+    subsets: ["latin"],
+    variable: "--font-sora",
+});
+
+const jost = Jost({
+    subsets: ["latin"],
+    variable: "--font-jost",
+});
 
 export default function RootLayout({
     children,
@@ -20,10 +25,8 @@ export default function RootLayout({
     children: ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={`${montserrat.variable} antialiased`}>
-                {children}
-            </body>
+        <html lang="en" className={`${sora.variable} ${jost.variable}`}>
+            <body className="antialiased">{children}</body>
         </html>
     );
 }
