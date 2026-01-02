@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { X, ChevronRight, User, Heart } from "lucide-react";
+import { X, User, Heart } from "lucide-react";
+
+import Logo from "./logo";
 
 interface MobileMenuProps {
     isOpen: boolean;
@@ -13,20 +15,18 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
     return (
         <>
             <div
-                className={`fixed inset-0 z-60 bg-black/40 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+                className={`fixed inset-0 z-60 bg-black/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
                     isOpen ? "visible opacity-100" : "invisible opacity-0"
                 }`}
                 onClick={onClose}
             />
             <div
-                className={`fixed top-0 bottom-0 left-0 z-70 flex w-[85%] max-w-[400px] flex-col bg-white transition-transform duration-500 ease-in-out md:hidden ${
+                className={`fixed top-0 bottom-0 left-0 z-70 flex w-[85%] max-w-100 flex-col bg-white transition-transform duration-500 ease-in-out lg:hidden ${
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             >
                 <div className="flex items-center justify-between border-b px-6 py-5">
-                    <span className="font-heading text-xl font-black tracking-tighter uppercase italic">
-                        Bike<span className="text-orange-500">o</span>
-                    </span>
+                    <Logo />
                     <button onClick={onClose} className="hover:text-orange-500">
                         <X size={24} />
                     </button>
