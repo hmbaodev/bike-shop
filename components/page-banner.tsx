@@ -15,8 +15,8 @@ interface PageBannerProps {
 
 const PageBanner = ({ title }: PageBannerProps) => {
     return (
-        <section className="section-padding bg-[url('/page-bg.jpg')] bg-cover bg-position-[50%_-68.2826px] bg-no-repeat">
-            <div className="flex flex-col items-center gap-2 py-20">
+        <section className="bg-[url('/page-bg.jpg')] bg-cover bg-position-[50%_-68.2826px] bg-no-repeat py-5">
+            <div className="flex flex-col items-center justify-center gap-2 py-10 lg:py-20">
                 <h1 className="text-center text-4xl font-semibold text-white">
                     {title}
                 </h1>

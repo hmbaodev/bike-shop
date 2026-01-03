@@ -1,4 +1,13 @@
-import { Truck, ShieldCheck, RefreshCcw, Headset } from "lucide-react";
+import {
+    Truck,
+    ShieldCheck,
+    RefreshCcw,
+    Headset,
+    MapPinCheckInside,
+    Phone,
+    Mail,
+    Clock3,
+} from "lucide-react";
 
 import slider1 from "@/app/assets/images/slide-1.jpg";
 import slider2 from "@/app/assets/images/slide-2.jpg";
@@ -135,51 +144,50 @@ export const featuredProducts = [
         id: 1,
         cover: featProd1,
         name: "Kandro Max",
-        price: 80.00,
+        price: 80.0,
     },
     {
         id: 2,
         cover: featProd2,
         name: "Velto Ride",
-        price: 72.00,
+        price: 72.0,
     },
     {
         id: 3,
         cover: featProd3,
         name: "Cylix Pro",
-        price: 80.00,
+        price: 80.0,
     },
     {
         id: 4,
         cover: featProd4,
         name: "Kravo X",
-        price: 120.00,
+        price: 120.0,
     },
     {
         id: 5,
         cover: featProd5,
         name: "Kandro Max",
-        price: 60.00,
+        price: 60.0,
     },
     {
         id: 6,
         cover: featProd6,
         name: "Fyzen Bike",
-        price: 77.00,
+        price: 77.0,
     },
     {
         id: 7,
         cover: featProd7,
         name: "Frenzo GT",
-        price: 100.00,
+        price: 100.0,
     },
     {
         id: 8,
         cover: featProd8,
         name: "Droven Max",
-        price: 80.00,
+        price: 80.0,
     },
-
 ];
 
 export const services = [
@@ -213,11 +221,29 @@ export const behindTheBrand = [
     {
         img: avatar01,
         name: "Adrian Stone",
-        position: "Founder"
+        position: "Founder",
     },
     {
         img: avatar02,
         name: "Karen Ryan",
-        position: "Co-founder"
-    }
-]
+        position: "Co-founder",
+    },
+];
+
+export const contactInfo = [
+    {
+        icon: Phone,
+        title: "Phone",
+        description: "0932 600 233",
+    },
+    {
+        icon: Mail,
+        title: "Email",
+        description: "hello@example.com",
+    },
+    {
+        icon: Clock3,
+        title: "Open Hours",
+        description: "Monday to Friday 09:30 - 17:30",
+    },
+];
