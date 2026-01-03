@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    @apply w-full max-w-7xl mx-auto px-4 lg:px-8;
+    @apply w-full max-w-7xl mx-auto px-4;
 }
 
 @theme inline {
@@ -142,4 +142,16 @@ body {
     body {
         @apply bg-background text-foreground;
     }
+}
+
+.section-padding {
+    @apply py-10 lg:py-15;
+}
+
+.btn {
+    @apply rounded-full bg-white px-6 py-2 lg:px-8 lg:py-3 text-sm font-semibold tracking-wider text-black uppercase transition-colors duration-300 hover:bg-gray-100 cursor-pointer;
+}
+
+.btn-brand {
+    @apply rounded-full bg-brand-orange px-6 py-2 lg:px-8 lg:py-3 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300 hover:bg-brand-orange/90 cursor-pointer;
 }

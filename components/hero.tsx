@@ -47,7 +47,7 @@ const CarouselItem = ({ slide, isActive, onCtaClick }: CarouselItemProps) => {
                             {slide.description}
                         </p>
                         <button
-                            className="rounded-full bg-white px-8 py-3 text-sm font-semibold tracking-wider text-black uppercase transition-colors duration-300 hover:bg-gray-100 cursor-pointer"
+                            className="btn"
                             onClick={onCtaClick}
                         >
                             {slide.cta}

@@ -5,10 +5,10 @@ const Logo = () => {
         <div className="flex justify-center">
             <Link
                 href="/"
-                className="font-heading text-2xl leading-none font-bold tracking-tighter md:text-4xl"
+                className="font-heading text-2xl leading-none font-bold tracking-tighter md:text-4xl text-black!"
             >
                 Bike<span className="text-orange-500">O</span>
-            </Link>
+            </Link> 
         </div>
     );
 };

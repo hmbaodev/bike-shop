@@ -25,7 +25,7 @@ const MobileMenu = ({ isOpen, onClose, links }: MobileMenuProps) => {
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             >
-                <div className="flex items-center justify-between border-b px-6 py-5">
+                <div className="flex items-center justify-between border-b px-4 py-4">
                     <Logo />
                     <button onClick={onClose} className="hover:text-orange-500">
                         <X size={24} />
