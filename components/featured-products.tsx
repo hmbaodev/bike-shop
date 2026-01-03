@@ -1,7 +1,6 @@
-import Image from "next/image";
-
 import { featuredProducts } from "@/constants";
 import SectionHeading from "./section-heading";
+import ProductItem from "./product-item";
 
 const FeaturedProducts = () => {
     return (
@@ -16,21 +15,13 @@ const FeaturedProducts = () => {
                     />
                     <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8">
                         {featuredProducts.map((product) => (
-                            <div
+                            <ProductItem
                                 key={product.id}
-                                className="flex flex-col items-center"
-                            >
-                                <Image src={product.cover} alt={product.name} />
-                                <p className="mt-3 text-lg font-medium capitalize">
-                                    {product.name}
-                                </p>
-                                <p className="text-brand-orange text-sm font-medium">
-                                    {product.price.toLocaleString("en-US", {
-                                        style: "currency",
-                                        currency: "USD",
-                                    })}
-                                </p>
-                            </div>
+                                id={product.id}
+                                cover={product.cover}
+                                name={product.name}
+                                price={product.price}
+                            />
                         ))}
                     </div>
                 </div>

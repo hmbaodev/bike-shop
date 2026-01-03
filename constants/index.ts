@@ -15,6 +15,8 @@ import featProd5 from "@/app/assets/images/feat-prod-5.webp";
 import featProd6 from "@/app/assets/images/feat-prod-6.webp";
 import featProd7 from "@/app/assets/images/feat-prod-7.webp";
 import featProd8 from "@/app/assets/images/feat-prod-8.webp";
+import avatar01 from "@/app/assets/images/avatar_01.jpg";
+import avatar02 from "@/app/assets/images/avatar_02.jpg";
 
 export const links = [
     {
@@ -206,3 +208,16 @@ export const services = [
             "Vel illum dolore eu feugiat nulla facilisis at vero eros et accu qui blandit",
     },
 ];
+
+export const behindTheBrand = [
+    {
+        img: avatar01,
+        name: "Adrian Stone",
+        position: "Founder"
+    },
+    {
+        img: avatar02,
+        name: "Karen Ryan",
+        position: "Co-founder"
+    }
+]

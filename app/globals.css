@@ -155,3 +155,11 @@ body {
 .btn-brand {
     @apply rounded-full bg-brand-orange px-6 py-2 lg:px-8 lg:py-3 text-sm font-semibold tracking-wider text-white uppercase transition-colors duration-300 hover:bg-brand-orange/90 cursor-pointer;
 }
+
+.heading-2 {
+    @apply text-3xl font-semibold lg:text-5xl;   
+}
+
+.heading-3 {
+    @apply text-xl font-medium lg:text-3xl;
+}
