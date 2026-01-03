@@ -42,7 +42,7 @@ const Header = () => {
                         </Link>
                         <button
                             onClick={() => setIsMobileOpen(!isMobileOpen)}
-                            className="transition-all"
+                            className="transition-all block lg:hidden"
                         >
                             {isMobileOpen ? <X /> : <Menu />}
                         </button>

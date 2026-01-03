@@ -54,19 +54,19 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     placeholder="Your name..."
-                                    className="w-full rounded-full border p-2"
+                                    className="w-full rounded-full border py-2 px-4"
                                 />
                                 <input
                                     type="email"
                                     placeholder="Your email..."
-                                    className="w-full rounded-full border p-2"
+                                    className="w-full rounded-full border py-2 px-4"
                                 />
                                 <textarea
                                     placeholder="Your message..."
-                                    className="h-50 w-full rounded-xl border p-2"
+                                    className="h-50 w-full rounded-xl border py-2 px-4"
                                 ></textarea>
                                 <button className="flex items-center justify-center gap-3 p-3 text-white bg-black rounded-full cursor-pointer hover:bg-black/85">
-                                    <span>SEND</span>
+                                    <span className="text-lg font-semibold">SEND</span>
                                     <SendHorizontal />
                                 </button>
                             </form>
