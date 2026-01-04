@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { Sora, Jost } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -27,6 +28,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${sora.variable} ${jost.variable}`}>
             <body className="antialiased">{children}</body>
+            <GoogleAnalytics gaId="G-YEVLHMZ287" />
         </html>
     );
 }
