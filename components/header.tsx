@@ -34,7 +34,7 @@ const Header = () => {
                         <button>
                             <Search size={20} />
                         </button>
-                        <Link href="/profile">
+                        <Link href="/sign-in">
                             <User size={20} />
                         </Link>
                         <Link href="/cart">

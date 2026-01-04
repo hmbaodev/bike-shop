@@ -1,15 +1,17 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface ProductItemProps {
     id: number | string;
     cover: StaticImageData;
     name: string;
     price: number;
+    slug: string;
 }
 
-const ProductItem = ({ id, cover, name, price }: ProductItemProps) => {
+const ProductItem = ({ id, cover, name, price, slug }: ProductItemProps) => {
     return (
-        <div key={id} className="flex flex-col items-center">
+        <Link href={`/product/${slug}`} className="flex flex-col items-center">
             <Image src={cover} alt={name} />
             <p className="mt-3 text-lg font-medium capitalize">{name}</p>
             <p className="text-brand-orange text-sm font-medium">
@@ -18,7 +20,7 @@ const ProductItem = ({ id, cover, name, price }: ProductItemProps) => {
                     currency: "USD",
                 })}
             </p>
-        </div>
+        </Link>
     );
 };
 

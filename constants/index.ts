@@ -3,7 +3,6 @@ import {
     ShieldCheck,
     RefreshCcw,
     Headset,
-    MapPinCheckInside,
     Phone,
     Mail,
     Clock3,
@@ -41,7 +40,7 @@ export const links = [
         label: "Contact",
     },
     {
-        path: "/collections",
+        path: "/collections/all",
         label: "Collections",
     },
     {
@@ -145,48 +144,72 @@ export const featuredProducts = [
         cover: featProd1,
         name: "Kandro Max",
         price: 80.0,
+        slug: "product-1",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
     {
         id: 2,
         cover: featProd2,
         name: "Velto Ride",
         price: 72.0,
+        slug: "product-2",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
     {
         id: 3,
         cover: featProd3,
         name: "Cylix Pro",
         price: 80.0,
+        slug: "product-3",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
     {
         id: 4,
         cover: featProd4,
         name: "Kravo X",
         price: 120.0,
+        slug: "product-4",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
     {
         id: 5,
         cover: featProd5,
         name: "Kandro Max",
         price: 60.0,
+        slug: "product-5",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
     {
         id: 6,
         cover: featProd6,
         name: "Fyzen Bike",
         price: 77.0,
+        slug: "product-6",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
     {
         id: 7,
         cover: featProd7,
         name: "Frenzo GT",
         price: 100.0,
+        slug: "product-7",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
     {
         id: 8,
         cover: featProd8,
         name: "Droven Max",
         price: 80.0,
+        slug: "product-8",
+        images: [featProd1, featProd2, featProd3, featProd4, featProd5, featProd6, featProd7, featProd8],
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec."
     },
 ];
 
@@ -245,5 +268,75 @@ export const contactInfo = [
         icon: Clock3,
         title: "Open Hours",
         description: "Monday to Friday 09:30 - 17:30",
+    },
+];
+
+export const filters = [
+    { query: "low-to-high", label: "price, low to high" },
+    { query: "high-to-low", label: "price, high to low" },
+    { query: "a-z", label: "A-Z" },
+    { query: "z-a", label: "Z-A" },
+];
+
+export const cartItems = [
+    {
+        id: 1,
+        cover: featProd1,
+        name: "Kandro Max",
+        price: 80.0,
+        slug: "product-1",
+        quantity: 1,
+        images: [
+            featProd1,
+            featProd2,
+            featProd3,
+            featProd4,
+            featProd5,
+            featProd6,
+            featProd7,
+            featProd8,
+        ],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec.",
+    },
+    {
+        id: 2,
+        cover: featProd2,
+        name: "Velto Ride",
+        price: 72.0,
+        slug: "product-2",
+        quantity: 1,
+        images: [
+            featProd1,
+            featProd2,
+            featProd3,
+            featProd4,
+            featProd5,
+            featProd6,
+            featProd7,
+            featProd8,
+        ],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec.",
+    },
+    {
+        id: 3,
+        cover: featProd3,
+        name: "Cylix Pro",
+        price: 80.0,
+        slug: "product-3",
+        quantity: 1,
+        images: [
+            featProd1,
+            featProd2,
+            featProd3,
+            featProd4,
+            featProd5,
+            featProd6,
+            featProd7,
+            featProd8,
+        ],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus sem in mauris volutpat aliquet. Proin fringilla commodo hendrerit. Cras luctus varius dolor, in porta mi maximus nec. Cras molestie ex sed turpis venenatis, pellentesque tincidunt tortor tempus. Sed blandit ipsum ac velit ullamcorper sagittis. In semper egestas mi. Donec.",
     },
 ];
