@@ -8,9 +8,9 @@ import {
     Clock3,
 } from "lucide-react";
 
-import slider1 from "@/app/assets/images/slide-1.jpg";
-import slider2 from "@/app/assets/images/slide-2.jpg";
-import slider3 from "@/app/assets/images/slide-3.jpg";
+import slider1 from "@/app/assets/images/slide-1-resize.jpg";
+import slider2 from "@/app/assets/images/slide-2-resize.jpg";
+import slider3 from "@/app/assets/images/slide-3-resize.jpg";
 import featuredImg1 from "@/app/assets/images/featured-1.jpg";
 import featuredImg2 from "@/app/assets/images/featured-2.jpg";
 import featuredImg3 from "@/app/assets/images/featured-3.jpg";
